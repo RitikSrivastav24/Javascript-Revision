@@ -12,3 +12,9 @@ var empEmail="nitin@gmail.com"
 
 console.table([empId,empName,empSalary]);
 
+console.log(typeof null)
+
+let a=10;
+let b=a;
+b= 20;
+console.log(b)
