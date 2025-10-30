@@ -38,4 +38,16 @@ console.log(numd)
 
 let StringValue= String(numd);
 console.log(StringValue)
-console.log(typeof(StringValue))
+console.log(typeof(StringValue))  
+
+//operations with conversion
+
+console.log("2" + 3)
+console.log(2+ "3")
+console.log("2" +5 +7)
+console.log(2 + 5 + "7")
+/*in the above code js takes the first value and treat according
+to their datatype. 
+*/
+
+
