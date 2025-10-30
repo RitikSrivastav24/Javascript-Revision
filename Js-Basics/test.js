@@ -1,6 +1,6 @@
 const empId= 54123;
 let empName="Ritik";
-
+let empSalary=80000
 /*Avoid using var because it overwrites the originbal value 
 var empEmail="ritik@gmail.com"
 var empEmail="nitin@gmail.com"
@@ -9,6 +9,6 @@ var empEmail="nitin@gmail.com"
 /* empId=4561;
  i got an error :- Assignment to constant variable. It means we cannot change a value of a variable declared with const. It is not allowed in Javascript
 */
-empName="Nitin"
-console.log(empName);
+
+console.table([empId,empName,empSalary]);
 
