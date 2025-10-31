@@ -27,5 +27,29 @@ const myFunction=function(){
 }
 
 console.log(typeof bigNumber)
-
 console.log(typeof temp)
+
+//--------------------------------------
+/*Stack and Heap Memories
+Primitive data types in JavaScript are stored in stack memory. When we copy or modify them,
+a new value is created so changes do not affect the original.
+*/
+let userOne="Ritik"
+let userTwo=userOne
+userTwo="Nitin"
+console.log(userOne)
+console.log(userTwo)
+
+/* Non-primitive data types (objects, arrays, functions) are stored in heap memory. Variables 
+store a reference to the original object, so when we copy or modify them, we work with the 
+same reference and changes reflect on the original object.
+*/
+
+let employe1={
+empEmail:"ritik@gmail.com"
+}
+let employee2=employe1
+
+employee2.empEmail="abc@google.com"
+console.log(employe1)
+console.log(employee2)
