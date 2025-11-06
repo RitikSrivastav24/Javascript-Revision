@@ -1,4 +1,6 @@
 //There are two types of datatypes in JS
+/*Promitive Datatypes are the fundamental blocks to store simple data values. These are
+immutable means they cannot be change after creation. If we want to change then it creates a new string*/
 //Primitive : 7 types. String,Number,Boolean,null,undefined,Symbol,BigInt
 const score=100
 const isLoggedIn=true
