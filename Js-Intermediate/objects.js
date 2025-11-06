@@ -2,6 +2,7 @@
 
 //---interesting topic for interview for symbol
 const mySym=Symbol("test1")
+//-- If we declare obejct like then this non singleton object(object literals)
 const user={
     name:"Ritik",
     "full name":"Ritik Shrivastav",
