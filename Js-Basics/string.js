@@ -43,3 +43,7 @@ let names=["Ritik","Nitin","Ankit"]
 names.sort((a,b) =>a.localeCompare(b))
 console.log(names)
 */
+
+
+// ------string interpolation:- 
+//String interpolation in JavaScript is a way to embed variables or expressions directly inside a string using template literals, which are defined with backticks (`). The placeholders use the ${...} syntax.
