@@ -34,10 +34,17 @@ const obj2 ={
 // const obj3={...obj1,...obj2}
 // console.log(obj3)
 
-console.log(Object.keys(myobj1))
-console.log(Object.values(myobj1))
-console.log(Object.entries(myobj1))
+// console.log(Object.keys(myobj1))
+// console.log(Object.values(myobj1))
+// console.log(Object.entries(myobj1))
 
 
 //check value is exist or not 
-console.log(Object.hasOwnProperty('email'))
+// console.log(Object.hasOwnProperty('email'))
+
+const course ={
+    courseName:"JS Revision",
+    courseFromPlatForm:"Youtube"
+}
+const {courseFromPlatForm:courseFrom}=course
+console.log(courseFrom)
