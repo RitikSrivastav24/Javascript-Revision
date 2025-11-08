@@ -28,20 +28,50 @@ In JavaScript, when a function doesn’t explicitly return a value, it automatic
 function getCubeofNum(number) {
     //first method :-return number * number * number
     //second method 
-    let result= number * number * number
+    let result = number * number * number
     return result
 }
 const result = getCubeofNum(5);
 //console.log("Result :", result)
 
-function loginMessage(userMessage)
-{
-    if(!userMessage){
+function loginMessage(userMessage) {
+    if (!userMessage) {
         console.log("Enter a username")
         return
     }
-     return `${userMessage} logged in`
+    return `${userMessage} logged in`
 }
 //console.log(loginMessage('Ritik'))
 //when we do not pass anyhting in argument then it gives undefined then we if else statement to handle this 
-console.log(loginMessage())
+// console.log(loginMessage())
+
+
+//function to create cart operator  
+// function cartShopping(...cart1){ in this case cart1 only assign to 500 so in this we use rest operater(...) it is like spread operater but the only difference is use case where we using this.
+function cartShopping(...cart1) {
+    return cart1
+}
+//console.log(cartShopping(500, 400, 600, 800))
+
+//handle objects in functions
+
+const myCart={
+    itemName:"Book",
+    price:999
+}
+
+function objFunction(anyObject){
+   console.log(`The Item is ${anyObject.itemName} and it's price is ${anyObject.price}` )
+}
+
+objFunction(myCart)
+
+
+//pass array to function
+
+const myarr=[200,300,400,500]
+function returnArray(getArray)
+{
+    return getArray[2]
+}
+console.log(returnArray(myarr))
