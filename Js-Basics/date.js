@@ -1,9 +1,9 @@
 let myDate=new Date()
-// console.log(myDate)
-// console.log(myDate.toString())
-// console.log(myDate.toLocaleDateString())
-// console.log(myDate.toLocaleString())
-// console.log(typeof myDate)
+console.log(myDate)
+console.log(myDate.toString())
+console.log(myDate.toLocaleDateString())
+console.log(myDate.toLocaleString())
+console.log(typeof myDate)
 
 //code to get define exact date
 let mydefinedDate= new Date(2025, 0,7)
@@ -17,4 +17,10 @@ let myTimeStamp=Date.now()
 // console.log(Math.floor((Date.now())/1000))
 
 let newDate=new Date()
-console.log(newDate.getDay())
+// console.log(newDate.getDay())
+
+
+const createdAt = new Date();
+const expiresAt = new Date(createdAt.getTime() + 5 * 60000); 
+// console.log(createdAt)
+// console.log(expiresAt)
