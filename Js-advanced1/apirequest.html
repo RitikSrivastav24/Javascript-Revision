@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: #fff; text-align: center;">
+    <div>
+        <h1>API Request Example</h1>
+        0 UNSENT Client has been created. open() not called yet.
+        1 OPENED open() has been called.
+        2 HEADERS_RECEIVED send() has been called, and headers and status are available.
+        3 LOADING Downloading; responseText holds partial data.
+        4 DONE The operation is complete.
+    </div>
+
+</body>
+<script>
+    const requestURL='https://api.github.com/users/RitikSrivastav24';
+    const xhr = new XMLHttpRequest(); //xmlhttprequest is a predefined class in js used to make api requests.it is used to interact with servers.and old way of making api requests.
+    xhr.open('GET',requestURL); //open method initializes a newly created request, or re-initializes an existing one.
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===4 && xhr.status===200){
+            const data=JSON.parse(xhr.responseText)
+            //console.log(typeof data); //string we need object so we have to parse it first.
+            //console.log(data.followers); //undefined because data is string
+            console.log(typeof data); //object
+            console.log(data.followers); //followers count
+        }
+    }
+    //console.log(xhr.readyState); // 1
+    xhr.send();
+</script>
+
+</html>
