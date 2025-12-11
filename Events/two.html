@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Javascript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(() => {
+    //     console.log('Ritik')
+    // }, 1000);//we can also give refernece of function. 
+
+    // const syMyName=function(){
+    //     console.log('Ritik Shrivastav')
+    // }
+    // setTimeout(syMyName, 1000)
+
+    const changeh1=function(){
+        document.querySelector('h1').innerHTML='Hi I am learning Js'
+    }
+    //changeh1()
+
+    const stop=setTimeout(changeh1,3000) //It change innerhtml of h1 after 3 seconds.
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(stop)
+        console.log("Stopped!!")
+    })
+</script>
+</html>
