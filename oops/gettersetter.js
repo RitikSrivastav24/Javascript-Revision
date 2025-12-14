@@ -1,10 +1,14 @@
-/*get and set are accessor properties that let you control how object properties are read and written.
+//get and set are accessor properties that let you control how object properties are read and written.
+
+// based on class
+/*
+get and set are defined inside a class and attached to the prototype automatically.
 Key Points
 
-Defined inside { }
-Works on single object
-Simple and readable
-Cannot be reused easily
+Modern and clean
+Prototype-based internally
+Reusable for multiple objects
+Most commonly used today
 */
 
 
