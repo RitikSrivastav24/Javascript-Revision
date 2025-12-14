@@ -1,3 +1,14 @@
+/*get and set are defined on a specific property using Object.defineProperty().
+
+✔ Key Points
+
+Fine-grained control per property
+Can define enumerable, writable, configurable
+Used in older / low-level JS
+More verbose
+*/
+
+
 function User(email, password){
     this._email = email;
     this._password = password
