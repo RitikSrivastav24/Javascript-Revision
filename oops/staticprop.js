@@ -1,3 +1,6 @@
+//The static keyword is used to define methods or properties that belong
+//to the class itself, not to the objects (instances) created from that class.
+
 class user{
     constructor(username) {
         this.username = username;
