@@ -1,3 +1,13 @@
+/*get and set are accessor properties that let you control how object properties are read and written.
+Key Points
+
+Defined inside { }
+Works on single object
+Simple and readable
+Cannot be reused easily
+*/
+
+
 class user{
     constructor(email,password){
         this.email=email;
