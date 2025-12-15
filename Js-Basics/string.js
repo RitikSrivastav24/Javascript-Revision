@@ -2,7 +2,6 @@ let name="Ritik"
 let myAge=23
 
 //This is older syntax. Do not wrote like this- console.log(name + myAge +" anyValue")
-
 console.log(`Hello my name is ${name} and my age is ${myAge}`)
 
 //Another way to define string 
