@@ -86,4 +86,21 @@ Q.5 What is filter() and why it is used ?
 Ans- filter() is used to apply a condition on an array and returns a 
      new array containing only the elements that satisfy the condition.
      It does not modify the original array.
+
+Q.6 What are falsy values?
+Ans- Falsy values are values that evaluate to false in a boolean context.
+
+Q.6 What is the difference between console.log() and return inside a 
+function?
+Ans-console.log() only prints a value to the console, whereas return 
+sends a value back to the place where the function was called.
+
+example :- function test() {
+  console.log(10); // only prints
+  return 20;       // sends value
+}
+
+const result = test();
+console.log(result); // 20
+
  */
